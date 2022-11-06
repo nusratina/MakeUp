@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="home.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+	<title>Make Up</title>
+</head>
+<body>
+	<div id="boxtitle"></div>
+	
+	<img src="https://freepngimg.com/thumb/makeup/70282-foundation-face-powder-make-up-foundation,powder,makeups,paste,emulsion,powdery,cream-cosmetics.png" width="30%" height="40%">
+	
+	<a href="toplist.html" class="text">Curious much?</a>
+	<a href="#" onclick="self.close()">Exit</a>
+
+	<h1>BeautyU'</h1>
+	<p>Search for your desired beauty products and decide which goes the best for you! Everything is at the tip of your fingers.</p>
+	
+	<p class="reminder">No results are shown if the Brand/Category are not in our database™</p>
+	
+	<div id="boxsearch">
+		<div class="search">
+			<p>Type the name of a brand and a category</p>
+
+			<!--user input BRAND and CATEGORY-->
+			<input type="text" class="column" placeholder="Brand" id="brand">
+			<input type="text" class="column" placeholder="Category" id="category">
+
+			<button onclick="buttonClicked()" class="submit">Search</button>
+	
+			<!--DISPLAY-->
+			<div class="display">
+
+				<div id="displayname">Name: </div><br>
+				<div id="displaydesc">Description: </div><br>
+				<div id="displayprice">$ </div><br>
+				<div id="displayweb">Website link: </div><br>
+				<div id="displaypl">Product link: </div><br>
+				<div id="displayrating">⭐ </div><br>
+
+			</div>
+
+		<script src="home.js"></script>
+
+		</div>
+	</div>
+
+<script src="home.js"></script>
+</body>
+</html>

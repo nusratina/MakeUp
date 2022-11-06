@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD App</title>
+    <!--<link rel="stylesheet" href="toplist.css" />-->
+    <link rel="stylesheet" href="photon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+    <title>Ask Us!</title>
+
+    <style>
+body {
+  background-image: url("https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 80rem;
+}
+
+h1{
+  font-family: 'Noto Serif KR', serif;
+  color: #693234;
+  text-shadow: 2px 2px 5px #ffdce2;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+form{
+  text-align: center;
+  margin-top: 5%;
+}
+
+label{
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.1rem;
+  color: #693234;
+  background-color: bisque;
+  box-shadow: 2px 2px #693234;
+  border-radius: 10px;
+  padding: 0.5%;
+}
+
+input[type=text]{
+  border-radius: 5px;
+  padding: 0.7%;
+  width: 40rem;
+}
+
+#fileContents{
+  border-radius: 5px;
+  width: 40rem;
+  height: 12rem;
+}
+
+#btnCreate{
+  margin-left: 25rem;
+}
+
+#btnUpdate{
+  margin-left: 2%;
+}
+
+button{
+    margin-left: 2%;
+}
+
+button:hover{
+  opacity: 80%;
+}
+
+.back{
+  background-color: bisque;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px #693234;
+  float: left;
+  padding: 1%;
+  margin-left: 26%;
+  margin-top: 2%;
+  width: 50%;
+  text-align: center;
+}
+
+.back:hover{
+  opacity: 80%;
+}
+
+a{
+  color: #693234;
+  text-decoration: none;
+}
+    </style>
+</head>
+  <body>
+    <div class="mainWrapper">
+    
+      <h1>Let us be the judge!</h1>
+
+      <form>
+        <div class="form-group">
+          <label>Your e-mail</label><br>
+          <input id="fileName" type="text" class="form-control" placeholder="Kindly put .txt at the end of your email (eg: xxx@yahoo.com.txt)">
+        </div>
+        <br>
+        <div class="form-group">
+          <label>Question</label><br>
+          <textarea id="fileContents" class="form-control" rows="5" placeholder="Enter your own top 5 list of beauty products and let us know!"></textarea>
+        </div>
+      </form>
+    
+    
+      <button id="btnCreate" class="btn btn-default">Send</button>
+      <button id="btnRead" class="btn btn-default">Read</button>
+      <button id="btnDelete" class="btn btn-default">Delete</button>
+      <button id="btnUpdate" class="btn-btn-default">Update</button>
+    
+    
+    </div>
+
+<a href="home.html" class="back">Home</a>
+
+    <script src="main.js">
+      
+      
+    </script>
+  </body>
+</html>
